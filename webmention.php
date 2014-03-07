@@ -258,7 +258,7 @@ class WebMentionPlugin {
     error_log("WebMention received... Thanks :)");
     echo "WebMention received... Thanks :)";
 
-    do_action( 'webmention_post', $comment_ID );
+//    do_action( 'webmention_post', $comment_ID ); 
     exit;
   }
 

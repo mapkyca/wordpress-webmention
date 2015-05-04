@@ -248,6 +248,8 @@ class WebMentionPlugin {
       // save comment
       $comment_ID = wp_new_comment($commentdata);
     }
+
+	error_log('WebMention created with commentID: ' . $comment_ID);
     
     // Now, if this was a webmention, we might have some extra metadata to save, so save it
     if ($comment_author_photo)
